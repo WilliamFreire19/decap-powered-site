@@ -1,0 +1,15 @@
+{
+  "title": "Bem-vindo ao Futuro Digital",
+  "subtitle": "Criamos experiências digitais incríveis",
+  "description": "Somos uma empresa focada em inovação e excelência, criando soluções digitais que transformam negócios e conectam pessoas.",
+  "sections": [
+    {
+      "title": "Nossos Serviços",
+      "content": "# Desenvolvimento Web\n\nCriamos sites e aplicações web modernas, responsivas e otimizadas para performance.\n\n## Design UX/UI\n\nDesenvolvemos interfaces intuitivas e experiências de usuário excepcionais.\n\n## Consultoria Digital\n\nAjudamos empresas a se transformarem digitalmente com estratégias personalizadas."
+    },
+    {
+      "title": "Por que nos escolher?",
+      "content": "## Experiência Comprovada\n\nMais de 5 anos criando soluções digitais inovadoras.\n\n## Tecnologia de Ponta\n\nUtilizamos as tecnologias mais modernas do mercado.\n\n## Suporte 24/7\n\nEstamos sempre disponíveis para ajudar nossos clientes."
+    }
+  ]
+}

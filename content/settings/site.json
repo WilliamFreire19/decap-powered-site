@@ -1,0 +1,24 @@
+{
+  "site_name": "Meu Site Decap",
+  "description": "Um site moderno gerenciado pelo Decap CMS",
+  "navigation": [
+    {
+      "label": "Início",
+      "url": "/"
+    },
+    {
+      "label": "Sobre",
+      "url": "/about"
+    },
+    {
+      "label": "Blog",
+      "url": "/blog"
+    }
+  ],
+  "social": {
+    "facebook": "",
+    "twitter": "",
+    "instagram": "",
+    "linkedin": ""
+  }
+}

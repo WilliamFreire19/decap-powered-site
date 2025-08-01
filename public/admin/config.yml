@@ -1,0 +1,81 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Páginas"
+    files:
+      - name: "home"
+        label: "Página Inicial"
+        file: "content/pages/home.json"
+        fields:
+          - { label: "Título Principal", name: "title", widget: "string" }
+          - { label: "Subtítulo", name: "subtitle", widget: "text" }
+          - { label: "Descrição", name: "description", widget: "text" }
+          - { label: "Imagem de Fundo", name: "hero_image", widget: "image", required: false }
+          - label: "Seções"
+            name: "sections"
+            widget: "list"
+            fields:
+              - { label: "Título da Seção", name: "title", widget: "string" }
+              - { label: "Conteúdo", name: "content", widget: "markdown" }
+              - { label: "Imagem", name: "image", widget: "image", required: false }
+      
+      - name: "about"
+        label: "Sobre"
+        file: "content/pages/about.json"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Conteúdo", name: "content", widget: "markdown" }
+          - { label: "Imagem", name: "image", widget: "image", required: false }
+          - label: "Equipe"
+            name: "team"
+            widget: "list"
+            fields:
+              - { label: "Nome", name: "name", widget: "string" }
+              - { label: "Cargo", name: "position", widget: "string" }
+              - { label: "Foto", name: "photo", widget: "image", required: false }
+              - { label: "Bio", name: "bio", widget: "text" }
+
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Data de Publicação", name: "date", widget: "datetime" }
+      - { label: "Autor", name: "author", widget: "string" }
+      - { label: "Resumo", name: "excerpt", widget: "text" }
+      - { label: "Imagem de Destaque", name: "featured_image", widget: "image", required: false }
+      - { label: "Tags", name: "tags", widget: "list", default: [] }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }
+
+  - name: "settings"
+    label: "Configurações"
+    files:
+      - name: "site"
+        label: "Site"
+        file: "content/settings/site.json"
+        fields:
+          - { label: "Nome do Site", name: "site_name", widget: "string" }
+          - { label: "Descrição", name: "description", widget: "text" }
+          - { label: "Logo", name: "logo", widget: "image", required: false }
+          - label: "Navegação"
+            name: "navigation"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Link", name: "url", widget: "string" }
+          - label: "Redes Sociais"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "Facebook", name: "facebook", widget: "string", required: false }
+              - { label: "Twitter", name: "twitter", widget: "string", required: false }
+              - { label: "Instagram", name: "instagram", widget: "string", required: false }
+              - { label: "LinkedIn", name: "linkedin", widget: "string", required: false }

@@ -1,0 +1,21 @@
+{
+  "title": "Sobre Nós",
+  "content": "# Nossa História\n\nFundada em 2019, nossa empresa nasceu da paixão por tecnologia e inovação. Começamos como uma pequena startup com o sonho de transformar a forma como as empresas se conectam com seus clientes através da tecnologia.\n\n## Nossa Missão\n\nTransformar ideias em realidade digital, criando soluções que impactam positivamente a vida das pessoas e o crescimento dos negócios.\n\n## Nossa Visão\n\nSer referência em inovação digital, reconhecida pela excelência técnica e pela capacidade de antecipar as necessidades do mercado.\n\n## Nossos Valores\n\n- **Inovação**: Estamos sempre buscando novas formas de resolver problemas\n- **Qualidade**: Entregamos apenas o que há de melhor\n- **Transparência**: Mantemos comunicação clara e honesta\n- **Colaboração**: Trabalhamos em equipe para alcançar resultados extraordinários",
+  "team": [
+    {
+      "name": "João Silva",
+      "position": "CEO & Fundador",
+      "bio": "Especialista em tecnologia com mais de 10 anos de experiência em desenvolvimento de software e gestão de produtos digitais."
+    },
+    {
+      "name": "Maria Santos",
+      "position": "CTO",
+      "bio": "Engenheira de software apaixonada por arquiteturas modernas e tecnologias emergentes. Lidera nossa equipe técnica com excelência."
+    },
+    {
+      "name": "Pedro Costa",
+      "position": "Head of Design",
+      "bio": "Designer UX/UI com foco em criar experiências digitais memoráveis e interfaces que encantam usuários."
+    }
+  ]
+}

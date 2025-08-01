@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>decap-powered-site</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>Meu Site Decap - Site Gerenciado Dinamicamente</title>
+    <meta name="description" content="Site moderno gerenciado pelo Decap CMS com React e Tailwind" />
+    <meta name="author" content="Decap Site" />
 
-    <meta property="og:title" content="decap-powered-site" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:title" content="Meu Site Decap - Site Gerenciado Dinamicamente" />
+    <meta property="og:description" content="Site moderno gerenciado pelo Decap CMS com React e Tailwind" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
@@ -20,5 +20,17 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>
