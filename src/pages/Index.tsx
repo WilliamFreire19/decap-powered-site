@@ -4,28 +4,18 @@ import { Footer } from '@/components/Footer';
 import { MarkdownRenderer } from '@/components/MarkdownRenderer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { LoadingSpinner, ErrorState } from '@/components/LoadingStates';
 import { ArrowRight, Star, Users, Zap } from 'lucide-react';
 
 const Index = () => {
   const { content, loading } = useHomeContent();
 
   if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
-      </div>
-    );
+    return <LoadingSpinner />;
   }
 
   if (!content) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-2xl font-bold mb-4">Conteúdo não encontrado</h1>
-          <p className="text-muted-foreground">Verifique a configuração do CMS</p>
-        </div>
-      </div>
-    );
+    return <ErrorState message="Conteúdo da página inicial não encontrado" />;
   }
 
   return (
