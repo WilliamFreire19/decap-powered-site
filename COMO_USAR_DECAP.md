@@ -27,13 +27,21 @@
 
 ### 4. **Para Usar Localmente:**
    ```bash
-   # Instalar Decap CMS localmente
-   npm install -g @decapcms/cli
+   # 1. Instalar dependências
+   npm install
    
-   # Rodar proxy local
-   decap-server
+   # 2. Instalar Decap CLI globalmente
+   npm install -g @decapcms/decap-server
    
-   # Acessar: http://localhost:8080/admin/
+   # 3. Em um terminal, rodar o servidor Decap:
+   npx decap-server
+   
+   # 4. Em outro terminal, rodar o site:
+   npm run dev
+   
+   # 5. Acessar: 
+   # Site: http://localhost:8080
+   # Admin: http://localhost:8080/admin/
    ```
 
 ### 5. **Configuração de Autenticação:**
